@@ -1,0 +1,274 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.logo > img {
+  width: 2.5rem;
+  border-radius: 8px;
+}
+
+.nav-list {
+  list-style-type: none;
+  justify-self: center;
+}
+.navbar > * {
+  margin: 0.8rem;
+}
+
+.list-elements a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  margin: 0 0.8rem;
+}
+
+.helper {
+  justify-self: end;
+  display: flex;
+}
+
+.helper > * {
+  margin: 0 0.8rem;
+}
+
+.search-field {
+  display: flex;
+}
+
+input[type="text"] {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+  font-size: 1.2rem;
+}
+
+input[type="text"]::placeholder {
+  font-size: 1.4rem;
+  padding: 0.4rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.profile,
+.cart-icon,
+.search-field {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-value {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
+  padding: 0.2rem;
+  color: white;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.cart-empty {
+  display: none;
+}
+
+@media only screen and (max-width: 1336px) and (min-width: 1101px) {
+  .logo > img {
+    width: 30px;
+    height: auto;
+  }
+  .list-elements a {
+    font-size: 0.8rem;
+  }
+
+  .search-field {
+    font-size: 0.8rem;
+  }
+
+  input[type="text"] {
+    font-size: 0.8rem;
+  }
+
+  input[type="text"]::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .profile,
+  .cart-icon {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 501px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .collapse-menu {
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-image: linear-gradient(to right, red, orange);
+    margin: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+  }
+
+  .list-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-elements > a {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .collapse-menu.open {
+    z-index: 10;
+    transition: all 500ms;
+  }
+  .collapse-menu.open .bar:first-child {
+    width: 0;
+    z-index: 10;
+  }
+  .collapse-menu.open .bar:last-child {
+    width: 0;
+    z-index: 10;
+  }
+  .collapse-menu.open .bar:nth-child(2) {
+    background-color: white;
+    z-index: 10;
+  }
+
+  .list-open {
+    margin-top: -110vh;
+    transition: all 500ms;
+  }
+
+  .list-close {
+    margin-top: 0;
+    transition: all 500ms;
+  }
+
+  .profile,
+  .cart-icon {
+    font-size: 1.4rem;
+    /* z-index: -1; */
+  }
+
+  .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 0.2rem;
+  }
+
+  .search-field {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-image: linear-gradient(to right, red, orange);
+    margin: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+  }
+
+  .list-elements {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .list-elements > a {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  .collapse-menu.open {
+    z-index: 10;
+    transition: all 500ms;
+  }
+  .collapse-menu.open .bar:first-child {
+    width: 0;
+    z-index: 10;
+  }
+  .collapse-menu.open .bar:last-child {
+    width: 0;
+    z-index: 10;
+  }
+  .collapse-menu.open .bar:nth-child(2) {
+    background-color: white;
+    z-index: 10;
+  }
+
+  .list-open {
+    margin-top: -110vh;
+    transition: all 500ms;
+  }
+
+  .list-close {
+    margin-top: 0;
+    transition: all 500ms;
+  }
+
+  .collapse-menu {
+    cursor: pointer;
+  }
+
+  .profile,
+  .cart-icon {
+    font-size: 1.4rem;
+    /* z-index: -1; */
+  }
+
+  .bar {
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 0.2rem;
+  }
+
+  .search-field {
+    display: none;
+    pointer-events: none;
+  }
+}

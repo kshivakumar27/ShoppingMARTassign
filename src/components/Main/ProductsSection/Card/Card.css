@@ -1,0 +1,130 @@
+.product-image {
+  max-width: 14rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+  object-fit: cover;
+}
+
+.card {
+  padding: 0.4rem;
+  position: relative;
+}
+
+.vendor {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.name {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8e8e8e;
+}
+
+.off-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+
+.original {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8e8e8e;
+  text-decoration: line-through;
+}
+
+.off-percent {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8e8e8e;
+}
+
+.variants {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+}
+
+.card:hover .variants {
+  opacity: 1;
+}
+
+.variants-list {
+  list-style-type: none;
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.variant {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.variant-label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-cart {
+  background-image: linear-gradient(to right, red, orange);
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.cart {
+  text-decoration: none;
+  color: white;
+}
+
+.product-info {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.toast-shadow {
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 1336px) and (min-width: 1101px) {
+  .variant-label {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 501px) {
+  .variant-label {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-image {
+    display: block;
+    max-width: 18rem;
+    margin: 0 auto;
+    height: auto;
+  }
+  .product-info {
+    margin-top: 0.4rem;
+  }
+  .card {
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .variant-label {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,74 @@
+.banner {
+  height: 10vh;
+  background-image: linear-gradient(to right, #1c1816, #eb4d08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text {
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+.btn-invite {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 30px;
+  margin-left: 1.4rem;
+  cursor: pointer;
+}
+
+.profile,
+.cart {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1336px) and (min-width: 1101px) {
+  .banner-text {
+    font-size: 0.8rem;
+  }
+  .btn-invite {
+    padding: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 501px){
+  .banner {
+    height: 20vh;
+    padding: 1rem 0.8rem;
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .btn-invite {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner {
+    height: 20vh;
+    padding: 1rem 0.8rem;
+    font-size: 14px;
+    flex-direction: column;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+
+  .btn-invite {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
