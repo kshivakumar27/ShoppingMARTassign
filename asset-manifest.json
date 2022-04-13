@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ShoppingMARTassign/static/css/main.1837096b.chunk.css",
+    "main.js": "/ShoppingMARTassign/static/js/main.c316f4ec.chunk.js",
+    "main.js.map": "/ShoppingMARTassign/static/js/main.c316f4ec.chunk.js.map",
+    "runtime-main.js": "/ShoppingMARTassign/static/js/runtime-main.d51e2dfd.js",
+    "runtime-main.js.map": "/ShoppingMARTassign/static/js/runtime-main.d51e2dfd.js.map",
+    "static/css/2.83342f34.chunk.css": "/ShoppingMARTassign/static/css/2.83342f34.chunk.css",
+    "static/js/2.d36113fe.chunk.js": "/ShoppingMARTassign/static/js/2.d36113fe.chunk.js",
+    "static/js/2.d36113fe.chunk.js.map": "/ShoppingMARTassign/static/js/2.d36113fe.chunk.js.map",
+    "index.html": "/ShoppingMARTassign/index.html",
+    "static/css/2.83342f34.chunk.css.map": "/ShoppingMARTassign/static/css/2.83342f34.chunk.css.map",
+    "static/css/main.1837096b.chunk.css.map": "/ShoppingMARTassign/static/css/main.1837096b.chunk.css.map",
+    "static/js/2.d36113fe.chunk.js.LICENSE.txt": "/ShoppingMARTassign/static/js/2.d36113fe.chunk.js.LICENSE.txt",
+    "static/media/empty.11220eee.png": "/ShoppingMARTassign/static/media/empty.11220eee.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d51e2dfd.js",
+    "static/css/2.83342f34.chunk.css",
+    "static/js/2.d36113fe.chunk.js",
+    "static/css/main.1837096b.chunk.css",
+    "static/js/main.c316f4ec.chunk.js"
+  ]
+}
